@@ -6,6 +6,12 @@ Besides `app` and `app-simple` there is `my-app`.
 
 `my-app` has a simple top navigation with two sections 'Home' and 'Users'. It is a basic application to explore the component router in Angular 2.
 
+```
+  <!-- App script -->
+  <script src="/__build__/my-app.js"></script>
+  <!-- TODO: replace with /app-simple.js or /app.js -->
+```
+
 # Getting Started (from original readme)
 ## Dependencies
 What you need to run this app:
