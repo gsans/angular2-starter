@@ -1,6 +1,6 @@
 #Angular 2 starter
 
-> Based on (https://github.com/gsans/angular2-starter)[https://github.com/gsans/angular2-starter]
+> Based on https://github.com/gsans/angular2-starter.
 
 Besides `app` and `app-simple` there is `my-app`. 
 
