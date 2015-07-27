@@ -11,6 +11,7 @@ import {Component, View} from 'angular2/annotations';
  * appDirectives: Our collection of directives from /directives
  */
 import {angularDirectives} from 'app/directives/directives';
+import {SectionService} from '../../services/sectionService';
 
 // Use webpack's `require` to get files as a raw string using raw-loader
 let styles   = require('./home.css');
@@ -27,6 +28,7 @@ let template = require('./home.html');
   template: template
 })
 export class Home {
-  constructor() {
+  constructor(section: SectionService) {
+  	section.setSection('home');
   }
 }

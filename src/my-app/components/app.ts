@@ -22,6 +22,8 @@ import {Home} from './home/home';
 import {Users} from './users/users';
 import {Details} from './details/details';
 
+import {SectionService} from '../services/sectionService';
+
 // Use webpack's `require` to get files as a raw string using raw-loader
 let styles   = require('./app.css');
 let template = require('./app.html');
@@ -62,7 +64,9 @@ let template = require('./app.html');
 ])
 export class App {
   name: string;
-  constructor() {
+  section;
+  constructor(section: SectionService) {
     this.name = 'angular'; // used in logo
+    this.section = section;
   }
 }

@@ -34,7 +34,7 @@ import {routerInjectables} from 'angular2/router';
  * App Services
  * our collection of injectables services
  */
-//import {appServicesInjectables} from './services/services';
+import {appServicesInjectables} from './services/services';
 
 
 /*
@@ -51,7 +51,9 @@ var universalInjectables = [
   // Angular's http/form/router services/bindings
   httpInjectables,
   formInjectables,
-  routerInjectables
+  routerInjectables,
+  // Our collection of services from /services
+  appServicesInjectables
 ];
 
 /*
