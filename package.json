@@ -31,6 +31,7 @@
   "homepage": "https://github.com/angular-class/angular2-webpack-starter",
   "dependencies": {
     "angular2": "2.0.0-alpha.32",
+    "bootstrap": "^3.3.5",
     "reflect-metadata": "^0.1.0",
     "rtts_assert": "2.0.0-alpha.32",
     "rx": "^2.5.3",

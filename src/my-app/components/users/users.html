@@ -1,0 +1,18 @@
+<h1>Users</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Username</th>
+      <th>Roles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ng-for="var user of userslist; var $index = index">
+      <td>{{user.id}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.roles.join(', ')}}</td>
+    </tr>
+  </tbody>
+</table>

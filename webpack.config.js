@@ -44,7 +44,16 @@ module.exports = {
        */
 
       './src/app-simple/bootstrap'
-    ]
+    ],
+    'my-app': [
+      // My-App
+
+      /*
+       * include any 3rd party js lib here
+       */
+
+      './src/my-app/bootstrap'
+    ],
   },
 
   // Config for our build files
