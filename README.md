@@ -1,10 +1,18 @@
 #Angular 2 starter
 
-> Based on (https://github.com/gsans/angular2-starter)[https://github.com/gsans/angular2-starter]
+> Based on https://github.com/gsans/angular2-starter.
 
 Besides `app` and `app-simple` there is `my-app`. 
 
 `my-app` has a simple top navigation with two sections 'Home' and 'Users'. It is a basic application to explore the component router in Angular 2.
+
+```
+//src/public/index.html
+
+45  <!-- App script -->
+46  <script src="/__build__/my-app.js"></script>
+47  <!-- TODO: replace with /app-simple.js or /app.js -->
+```
 
 # Getting Started (from original readme)
 ## Dependencies
