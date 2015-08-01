@@ -4,11 +4,13 @@ export class UsersService {
     this._users = [{
       id: 34,
       username: 'batman',
-      roles: ['admin', 'user']
+      roles: ['admin', 'user'], 
+      superuser: true
     }, {
       id: 67,
       username: 'spiderman',
-      roles: ['user']
+      roles: ['user'],
+      superuser: false
     }];
   }
   get() {

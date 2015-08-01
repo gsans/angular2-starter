@@ -9,9 +9,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ng-for="var user of userslist; var $index = index">
+    <tr *ng-for="var user of userslist" [class.superuser]="user.superuser">
       <td>{{user.id}}</td>
-      <td>{{user.username}}</td>
+      <td>{{user.username}} <span *ng-if="user.superuser">(superuser)</span></td>
       <td>{{user.roles.join(', ')}}</td>
     </tr>
   </tbody>
