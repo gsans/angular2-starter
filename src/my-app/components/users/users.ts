@@ -14,6 +14,7 @@ import {RouteConfig} from 'angular2/router';
 import {angularDirectives} from 'app/directives/directives';
 
 import {SectionService} from '../../services/sectionService';
+import {UsersService} from '../../services/usersService';
 
 // Use webpack's `require` to get files as a raw string using raw-loader
 let styles   = require('./users.css');
@@ -32,16 +33,8 @@ let template = require('./users.html');
 export class Users {
   userslist;
   
-  constructor(section: SectionService) {
+  constructor(section: SectionService, users: UsersService) {
     section.setSection('users');
-  	this.userslist = [{
-      id: 34,
-      username: 'batman',
-      roles: ['admin', 'user']
-    }, {
-      id: 67,
-      username: 'spiderman',
-      roles: ['user']
-    }];
+  	this.userslist = users.get();
   }
 }
