@@ -1,6 +1,6 @@
 #Angular 2 starter
 
-> Based on https://github.com/gsans/angular2-starter.
+> Based on https://github.com/angular-class/angular2-webpack-starter.
 
 Besides `app` and `app-simple` there is `my-app`. 
 
