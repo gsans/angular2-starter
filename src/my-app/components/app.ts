@@ -21,6 +21,7 @@ import {Home} from './home/home';
 // Otherwise we only use one file for a component
 import {Users} from './users/users';
 import {Details} from './details/details';
+import {Contact} from './contact/contact';
 
 import {SectionService} from '../services/sectionService';
 
@@ -60,6 +61,10 @@ let template = require('./app.html');
     path: '/users', 
     as: 'users', 
     component: Users 
+  }, {
+    path: '/contact',
+    as: 'contact',
+    component: Contact
   }
 ])
 export class App {
