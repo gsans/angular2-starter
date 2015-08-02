@@ -25,7 +25,11 @@ let template = require('./home.html');
   directives: [ angularDirectives ],
   // include our .html and .css file
   styles: [ styles ],
+  /*styles: [`h1 { 
+    background-color: #F8F8F8;
+  }`], */
   template: template
+  //template: `<h1>Home</h1>`
 })
 export class Home {
   constructor(section: SectionService) {
