@@ -32,7 +32,10 @@ let template = require('./home.html');
   //template: `<h1>Home</h1>`
 })
 export class Home {
+  date;
   constructor(section: SectionService) {
   	section.setSection('home');
+  	this.date = new Date().toString();
+  	setInterval(() => this.date = new Date().toString(), 1000);
   }
 }
