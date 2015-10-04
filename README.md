@@ -1,5 +1,7 @@
 #Angular 2 starter
 
+[Instructions: Getting started with Angular 2](https://docs.google.com/document/d/1MkpvTNfmxHwdSv9rQyQIvjRLnoGk4rvkNMkOEWTPkCw/edit#heading=h.fn3zh8ljy85u)
+
 > Based on https://github.com/angular-class/angular2-webpack-starter.
 
 Besides `app` and `app-simple` there is `my-app`. 
