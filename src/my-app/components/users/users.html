@@ -11,7 +11,7 @@
   <tbody>
     <tr *ng-for="var user of userslist" [class.superuser]="user.superuser">
       <td>{{user.id}}</td>
-      <td>{{user.username}} <span *ng-if="user.superuser">(superuser)</span></td>
+      <td (click)="onClick(user.username)">{{user.username}} <span *ng-if="user.superuser">(superuser)</span></td>
       <td>{{user.roles.join(', ')}}</td>
     </tr>
   </tbody>

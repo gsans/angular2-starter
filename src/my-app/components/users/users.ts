@@ -32,9 +32,16 @@ let template = require('./users.html');
 })
 export class Users {
   userslist;
+  //window;
   
   constructor(section: SectionService, users: UsersService) {
     section.setSection('users');
   	this.userslist = users.get();
+    //this.window = window;
+  }
+
+  onClick(msg){
+    alert(msg);
+    console.log(msg);
   }
 }

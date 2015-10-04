@@ -1,5 +1,5 @@
 export class UsersService {
-  _users;
+  private _users;
   constructor() {
     this._users = [{
       id: 34,
